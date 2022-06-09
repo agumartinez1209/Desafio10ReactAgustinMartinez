@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar";
-import Lista from "./components/Lista";
 import ItemCount from "./components/ItemCount";
+import LogoNavBar from "./components/LogoNavBar";
+import ItemListContainer from "./components/ItemListContainer";
 
 
 function App() {
@@ -13,8 +14,10 @@ function App() {
   return (<div>
 
       <NavBar />
-      <Lista titulo={"NUESTROS PRODUCTOS"} />
+      <ItemListContainer titulo={"NUESTROS PRODUCTOS"} />
+      <LogoNavBar />
       <ItemCount inicial ={1} maximo = {20} onAdd ={onAdd} />
+      
   </div>
   );
 }
