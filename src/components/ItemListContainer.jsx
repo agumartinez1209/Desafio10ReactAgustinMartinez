@@ -8,10 +8,13 @@ const ItemListContainer = ({greeting}) => {
   const[productos, setProductos] = useState([]) 
 
   useEffect( () => {
+    setTimeout(()=>{
       fetch("https://rickandmortyapi.com/api/character")
       .then (res => res.json ())
       .then (res => setProductos(res.results))  
       .catch (error => console.error("error:", error))
+    },2000)
+
 
     },[])
 
