@@ -1,0 +1,53 @@
+[33mcommit 88f4b29512e2912767ffda03ebf7fb47ff27bac4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: agumartinez1209 <agu.am.2359@gmail.com>
+Date:   Mon Jun 20 16:57:30 2022 -0300
+
+    agrego el boton finalizar
+
+[33mcommit 12fa97bb8cdfcff8ed191e1ba0bf3983ace20dca[m
+Author: agumartinez1209 <agu.am.2359@gmail.com>
+Date:   Wed Jun 8 22:29:45 2022 -0300
+
+    agrego nuevos componentes item
+
+[33mcommit ec7d1cd45374c43dabd9d551e6ddfb09cb623da4[m
+Author: agumartinez1209 <agu.am.2359@gmail.com>
+Date:   Mon Jun 6 23:08:16 2022 -0300
+
+    modificando el class y colocando el contador
+
+[33mcommit f66555c2577bd6cd887c734d04cf26e2162583e9[m
+Author: agumartinez1209 <agu.am.2359@gmail.com>
+Date:   Wed Jun 1 20:26:21 2022 -0300
+
+    agrego componente con props
+
+[33mcommit 47e173e4ec9b935ff453ef6661205f1ff42903ed[m
+Author: agumartinez1209 <agu.am.2359@gmail.com>
+Date:   Wed Jun 1 18:50:03 2022 -0300
+
+    agregando el cartwidget
+
+[33mcommit 405a7f54d57ac208723a963bd79f6a183f67d1d4[m
+Author: agumartinez1209 <agu.am.2359@gmail.com>
+Date:   Mon May 30 16:15:23 2022 -0300
+
+    agrego logo
+
+[33mcommit 6a000d2a029e05befce68a3d9cfa1f3f92ad2776[m
+Author: agumartinez1209 <agu.am.2359@gmail.com>
+Date:   Mon May 30 16:06:43 2022 -0300
+
+    agregando la navbar
+
+[33mcommit 87b1fd3f30890ac772d1840a5ede90cf9f9d85ee[m
+Author: agumartinez1209 <agu.am.2359@gmail.com>
+Date:   Mon May 23 01:14:37 2022 -0300
+
+    primercommit
+
+[33mcommit 62f3e179a379de8dc58fcd9e7c04b96354aa4261[m
+Author: agumartinez1209 <agu.am.2359@gmail.com>
+Date:   Mon May 23 00:58:14 2022 -0300
+
+    Initialize project using Create React App
