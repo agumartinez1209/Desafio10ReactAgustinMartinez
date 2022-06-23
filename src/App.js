@@ -8,6 +8,7 @@ import Nosotros from "./Routes/Nosotros";
 import Contacto from "./Routes/Contacto";
 
 import ItemDetailContainer from "./components/ItemDetailContainer";
+import MyProvider from "./context/CartContext";
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
   
   return (<div>
     <BrowserRouter>
+    <MyProvider>
       <NavBar />
       <Routes>
         <Route path="/" element={<ItemListContainer  /> } />
@@ -37,7 +39,7 @@ function App() {
       </Routes>
       
       
-
+      </MyProvider>
       </BrowserRouter>
   </div>
   );
