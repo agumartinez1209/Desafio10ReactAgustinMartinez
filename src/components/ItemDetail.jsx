@@ -6,21 +6,37 @@ import ItemCount from './ItemCount';
 
 
 
-const ItemDetail = ({ texto, imagen, categoria, precio, id}) => {
+function ItemDetail ({ producto}) {
 
 
-
-const [unidades, setUnidades] = useState();
-
-
-
+const {texto, imagen, categoria, precio, id, stock} = producto
+const [unidades, setUnidades] = useState(true);
+const [count, setCount] = useState(1)
 const {isInCart, addItem} = useContext (CartContext)
 
+
+const sumar = () => {
+  if (count < stock) {
+      setCount(count + 1)
+  } else {
+      alert("no puedes agregar mas productos")
+  }
+}
+
+  const restar = () => {
+      count > 1 ? setCount(count - 1) : alert("No puedes quitar mas productos");
+      
+  }
+
+  const reset = () =>{
+      setCount (1)
+  }
+
 const onAdd = (count) => {
-  // alert(count);
-  setUnidades(count);
+  alert(count);
+  setUnidades(false);
   isInCart(id)
-  addItem(texto, imagen, categoria, precio, id, count)
+  addItem(producto, count)
 }
 
 
@@ -41,7 +57,8 @@ const onAdd = (count) => {
                     <h5 className="card-title card-title-detail">{texto}</h5>
                     <p className="card-text card-detail mt-3  mb-5 shadow-sm p-3">Categoria: {categoria}</p>
                     <p className="card-text price-detail  mb-5 shadow-sm p-3 ">Precio: ${precio}</p>
-                    {unidades >0? <Link to={"/cart"} className="btn btn-outline-success"> Finalizar compra </Link>:<ItemCount inicial ={1} maximo = {20} onAdd ={onAdd}/> }
+                    <p className="card-text price-detail  mb-5 shadow-sm p-3 ">stock: {stock}</p>
+                    {unidades? <ItemCount sumar ={sumar} restar= {restar} reset= {reset} count= {count} onAdd ={onAdd}/> :<Link to={"/cart"} className="btn btn-outline-success"> Finalizar compra </Link> }
 
                   </div>
                 </div>

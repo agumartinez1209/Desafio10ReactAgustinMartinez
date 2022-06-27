@@ -4,70 +4,80 @@
       "id": 1,
       "texto": "Papel Transparente x420 - Lion Rolling Circus",
       "imagen": "https://d22fxaf9t8d39k.cloudfront.net/0d5c2d1547ea17d501e2097b06ce42a08330d2f0a260cb3d93f1723907a1cdeb46621.jpeg",
-      "categoria":"armado"
+      "categoria":"armado",
+      "stock": 20
     },
     {
       "precio": 300,
       "id": 2,
       "texto": "Celulosa Lion Rolling Circus King Size 110mm",
       "imagen": "https://www.cannasoulgrow.com.ar/wp-content/uploads/2021/03/Papel-celulosa-king-size.jpg",
-      "categoria":"armado"
+      "categoria":"armado",
+      "stock": 49
     },
     {
       "precio": 250,
       "id": 3,
       "texto": "Encendedor Lion Rolling Circus",
       "imagen": "https://d22fxaf9t8d39k.cloudfront.net/43991e1e39e47c31852cbf80038e45940fc314195ebb874ccc5fd0760c248e4a14045.jpeg",
-      "categoria":"accesorio"
+      "categoria":"accesorio",
+      "stock": 12
     },
     {
       "precio": 1450,
       "id": 4,
       "texto": "Bandeja Lion Rolling Circus",
       "imagen": "https://www.gorigrow.com.ar/wp-content/uploads/2020/10/bandeja-chi.jpg",
-      "categoria":"accesorio"
+      "categoria":"accesorio",
+      "stock": 43
     },
     {
       "precio": 330,
       "id": 5,
       "texto": "Filtro Unbleached Slim Lion Rolling Circus 6mm",
       "imagen": "https://d22fxaf9t8d39k.cloudfront.net/2623920ef440375aa1e1cc34edb1d8070747baf0303657f6877e1d8cedce840e46621.jpeg",
-      "categoria":"armado"
+      "categoria":"armado",
+      "stock": 30
     },
     {
       "precio": 2300,
       "id": 6,
       "texto": "Picador Metal Estrella de la muerte (3 partes)",
       "imagen": "https://d2r9epyceweg5n.cloudfront.net/stores/001/832/213/products/picador-metal-estrella-muerte1-7d096ac99ace65747f16318187034304-1024-1024.jpg",
-      "categoria":"accesorio"
+      "categoria":"accesorio",
+      "stock": 17
     },
     {
       "precio": 2000,
       "id": 7,
       "texto": "Picador Amsterdam Metal - Lion Rolling Circus",
       "imagen": "https://www.sonrishop.com.ar/wp-content/uploads/2020/12/Lion-Picador-Metal-Gris-2p-Amsterdam.jpg",
-      "categoria":"accesorio"
+      "categoria":"accesorio",
+      "stock": 63
     },
     {
       "precio": 650,
       "id": 8,
       "texto": "Armador de plastico - Lion Rolling Circus",
       "imagen": "https://www.upgrowshop.com/image.php?width=650&height=650&image=/images/products/846/armador-plastico-lion-rolling-circus-standard-1-1-4_8334.jpeg",
-      "categoria":"armado"
+      "categoria":"armado",
+      "stock": 30
     },
     {
       "precio": 1750,
       "id": 9,
       "texto": "Bandeja Raw Negra Small",
       "imagen": "https://d22fxaf9t8d39k.cloudfront.net/e84ad54f326f52a64a4f62325e8eb68f72290c869a0937838c507884404a6d4646621.jpeg",
-      "categoria":"accesorio"
+      "categoria":"accesorio",
+      "stock": 25
     },
     {
       "precio": 9000,
       "id": 10,
       "texto": "Neceser RAW",
       "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/263/680/products/d_nq_np_942410-mla48494735028_122021-o11-4909ec4028a85c7ce216438960954051-1024-1024.jpg",
-      "categoria":"accesorio"
+      "categoria":"accesorio",
+      "stock": 64
     }
    
    

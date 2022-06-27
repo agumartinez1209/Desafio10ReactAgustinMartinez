@@ -6,22 +6,22 @@ import ItemDetail from './ItemDetail'
 
 function ItemDetailContainer() {
 
-    const [itemDetail, setItemDetail] = useState ({})
+    const [producto, setProducto] = useState ({})
     const { id } =useParams()
     useEffect(() => {
 
             fetch("../../productos.json")
             .then (res => res.json ())
-            .then(productos => {setItemDetail(productos.find(producto => producto.id == id)) })
+            .then(productos => {setProducto(productos.find(producto => producto.id == id)) })
             .catch (error => console.error("error:", error))
-            console.log(itemDetail)
+            console.log(producto)
 
     }, [id]);
     
   
   return (
     <>
-    <ItemDetail id = {itemDetail.id} texto = {itemDetail.texto} categoria = {itemDetail.categoria}  precio = {itemDetail.precio} imagen = {itemDetail.imagen} />
+    <ItemDetail key = {producto.id} producto= {producto}  />
     </>
   )
 }
