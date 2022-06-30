@@ -2,19 +2,29 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetail from './ItemDetail'
-
+import {doc, getDoc, getFirestore} from "firebase/firestore";
 
 function ItemDetailContainer() {
 
     const [producto, setProducto] = useState ({})
     const { id } =useParams()
+
+    const db = getFirestore();
+    const coleccion = "productos";
+
+
+
     useEffect(() => {
 
-            fetch("../../productos.json")
-            .then (res => res.json ())
-            .then(productos => {setProducto(productos.find(producto => producto.id == id)) })
-            .catch (error => console.error("error:", error))
-            console.log(producto)
+      const productFound = doc(db, coleccion, id);
+      getDoc(productFound).then((res)=>{
+        if (res.exists()){
+          console.log(res.data());
+          setProducto({...res.data(), id: res.id})
+        }else{
+          alert("no se encontro")
+        }
+      })
 
     }, [id]);
     

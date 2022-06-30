@@ -1,18 +1,31 @@
 import NavBar from "./components/NavBar";
-
 import ItemListContainer from "./components/ItemListContainer";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Productos from "./Routes/Productos";
 import Novedades from "./Routes/Novedades";
 import Nosotros from "./Routes/Nosotros";
 import Contacto from "./Routes/Contacto";
-
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import MyProvider from "./context/CartContext";
 import Cart from "./components/Cart";
+import { initializeApp } from "firebase/app";
+
 
 function App() {
   
+  
+const firebaseConfig = {
+  apiKey: "AIzaSyBHQdMXOV6EWH2o74jq9G98p5oYpmis11w",
+  authDomain: "enjoint-ecomerce-of.firebaseapp.com",
+  projectId: "enjoint-ecomerce-of",
+  storageBucket: "enjoint-ecomerce-of.appspot.com",
+  messagingSenderId: "314001207388",
+  appId: "1:314001207388:web:455c991ab78702a8de7699"
+};
+
+initializeApp(firebaseConfig);
+
+
 
   
   return (<div>
