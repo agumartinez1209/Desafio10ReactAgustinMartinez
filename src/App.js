@@ -9,6 +9,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import MyProvider from "./context/CartContext";
 import Cart from "./components/Cart";
 import { initializeApp } from "firebase/app";
+import Checkout from "./components/Checkout";
 
 
 function App() {
@@ -51,6 +52,7 @@ initializeApp(firebaseConfig);
         <Route path="/Contacto" element= {<Contacto />} />
         <Route path="Productos/:id" element={<ItemDetailContainer />} />
         <Route path="/cart" element={<Cart /> } />  
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
       
       

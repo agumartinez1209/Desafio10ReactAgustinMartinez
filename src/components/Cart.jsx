@@ -44,29 +44,7 @@ function Cart() {
                               <span className="text-muted">Precio: </span>${item.precio}
                             </p>
                           </div>
-                          {/* boton para sumar y restar en el carrito */}
-                          {/* <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
-                            <button
-                              className="btn btn-link px-2"
-                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                            >
-                              <i className="fas fa-minus" />
-                            </button>
-                            <input
-                              id="form1"
-                              min={0}
-                              name="quantity"
-                              defaultValue={2}
-                              type="number"
-                              className="form-control form-control-sm"
-                            />
-                            <button
-                              className="btn btn-link px-2"
-                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                            >
-                              <i className="fas fa-plus" />
-                            </button>
-                          </div> */}
+
                           <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                             <h5 className="mb-0">Subtotal: $ ${item.count * item.precio} </h5>
                           </div>
@@ -101,9 +79,11 @@ function Cart() {
                   </div>
                   <div className="card">
                     <div className="card-body">
+                    <Link to="/checkout/" >
                       <button type="button" className="btn btn-outline-success margin-left">
                         Procesar Pago
                       </button>
+                      </Link>
                       <button type="button" className="btn btn-outline-success margin-left" onClick={emptyCart}>
                         Vaciar Carrito
                       </button>
