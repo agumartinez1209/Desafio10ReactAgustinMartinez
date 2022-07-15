@@ -7,7 +7,7 @@ function Item  ({productos}) {
 
   const {precio, texto, imagen, id, categoria} = productos
   return (
-    <Card className='text-center  mx-auto ' style={{ width: '15rem', margin: 20 }}>
+    <Card className='text-center  mx-auto  d-flex  ' style={{ width: '15rem', margin: 20 }}>
   <Card.Img variant="top"  src={imagen}  />
   <Card.Body>
     <Card.Title> {texto} </Card.Title>
@@ -16,7 +16,7 @@ function Item  ({productos}) {
       $ {precio}
       
     </Card.Text>
-    <Link to={"/Productos/" + id} ><Button variant="btn btn-outline-success" >Ver Detalle</Button> </Link>
+    <Link to={"/Productos/" + id} ><Button variant="btn btn-outline-success"   >Ver Detalle</Button> </Link>
     
   </Card.Body>
 </Card>   

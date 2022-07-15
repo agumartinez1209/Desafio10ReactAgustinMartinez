@@ -8,7 +8,7 @@ function Cart() {
 
   const { cart, deleteItem, getItemQty, getItemPrice, emptyCart } = useContext(CartContext);
 
-
+  
 
   return (
 
@@ -26,8 +26,9 @@ function Cart() {
 
                     </div>
                   </div>
+                  
                   {cart.map(item => (
-                    <div className="card rounded-3 mb-4">
+                    <div className="card rounded-3 mb-4" key={item.id}>
                       <div className="card-body p-4">
                         <div className="row d-flex justify-content-between align-items-center">
                           <div className="col-md-2 col-lg-2 col-xl-2">
@@ -78,17 +79,17 @@ function Cart() {
                     <h5 className="fw-bold mb-0">$ {getItemPrice()} ({getItemQty()} Producto/s)</h5>
                   </div>
                   <div className="card">
-                    <div className="card-body">
+                    <div className="card-body ">
                     <Link to="/checkout/" >
-                      <button type="button" className="btn btn-outline-success margin-left">
+                      <button type="button" className="btn btn-outline-success  ">
                         Procesar Pago
                       </button>
                       </Link>
-                      <button type="button" className="btn btn-outline-success margin-left" onClick={emptyCart}>
+                      <button type="button" className="btn btn-outline-success " onClick={emptyCart}>
                         Vaciar Carrito
                       </button>
                       <Link to="/Productos" >
-                        <button type="button" className="btn btn-outline-success margin-left">
+                        <button type="button" className="btn btn-outline-success ">
                           Agregar mas Productos
                         </button>
                       </Link>

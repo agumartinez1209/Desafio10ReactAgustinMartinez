@@ -43,10 +43,10 @@ const onAdd = (count) => {
     return (
       <>
 
-      <div className="container container-detail">
-        <div className="row">
-          <div className="col-12 col-sm-6 pt-5">
-            <Link to="/Productos" className=" nav-tipografia nav-link active"> Volver Atras</Link>
+      <div className="container h-100 py-5">
+        <div className="row d-flex justify-content-center align-items-center h-100">
+          <div className="col-10">
+            <Link to="/Productos" type="button" className=" btn btn-outline-success  nav-link active"> Volver Atras</Link>
             <div className="card mb-3 card-style">
               <div className="row g-0">
                 <div className="col-md-4">

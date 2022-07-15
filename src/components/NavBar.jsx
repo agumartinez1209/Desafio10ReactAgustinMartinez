@@ -3,7 +3,7 @@ import ImagenNav from "./ImagenNav";
 import { Link } from "react-router-dom";
 
 function NavBar() {
-    return <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    return <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
         <div className="container-fluid">
             <Link className="navbar-brand" to="/"> <ImagenNav /> </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
@@ -17,9 +17,6 @@ function NavBar() {
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/Nosotros" >NOSOTROS</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/Novedades" >NOVEDADES</Link>
                     </li>
                     <li className="nav-item dropdown">  
 
@@ -47,8 +44,9 @@ function NavBar() {
                         <Link className="nav-link" to="/Contacto" >CONTACTO</Link>
                     </li>
                 </ul>
-                <CartWidget />
+                
             </div>
+            <CartWidget />
         </div>
     </nav>
 }

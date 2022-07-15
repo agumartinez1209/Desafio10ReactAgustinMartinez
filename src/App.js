@@ -10,6 +10,7 @@ import MyProvider from "./context/CartContext";
 import Cart from "./components/Cart";
 import { initializeApp } from "firebase/app";
 import Checkout from "./components/Checkout";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -55,7 +56,7 @@ initializeApp(firebaseConfig);
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
       
-      
+      <Footer />
       </MyProvider>
       </BrowserRouter>
   </div>
