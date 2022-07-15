@@ -5,7 +5,7 @@ Este proyecto fue creado con :
 - [React](https://es.reactjs.org/)
 - [Bootsrap](https://getbootstrap.com/)
 - [React-Bootrap](https://react-bootstrap.github.io/)
-- [React-Bootrap](https://v5.reactrouter.com/web/guides/quick-start)
+- [React-Router](https://v5.reactrouter.com/web/guides/quick-start)
 - [Firebase](https://firebase.google.com/)
 
 ## Descripcion
