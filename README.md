@@ -8,7 +8,6 @@ Este proyecto fue creado con :
 - [React-Bootrap](https://v5.reactrouter.com/web/guides/quick-start)
 - [Firebase](https://firebase.google.com/)
 
-[gif]()
 ## Descripcion
 
 Este proyecto fue realizado con el fin de demostrar lo aprendido en el curso de react de coderhouse.
