@@ -25,3 +25,6 @@ Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
 
 ### `Deploy`
 Puedo inicializar la pagina a traves de una URL:
+
+
+![React App - 14 July 2022](https://user-images.githubusercontent.com/99144906/179131771-1db1c2db-9e0e-469d-868c-23d687b32909.gif)
